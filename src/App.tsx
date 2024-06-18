@@ -72,10 +72,10 @@ return (
             </div>
           </div>
           <div className="bg-white py-4 px-3">
-            <h3 className="text-xs mb-2 font-medium">Des cadeaux incroyables prêts à être utilisés dans votre prochain projet</h3>
+            <h3 className="text-xs mb-2 font-medium">Currency: {info.currencies && Object.values(info.currencies)[0]?.name} ({info.currencies && Object.values(info.currencies)[0]?.symbol})</h3>
             <div className="flex justify-between items-center">
               <p className="text-xs text-gray-400">
-                Lorem, ipsum dolor sit amet
+                Country Name: {info.name.official}
               </p>
               <div className="relative z-40 flex items-center gap-2">
                 <a className="text-orange-600 hover:text-blue-500" href="">
